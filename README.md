@@ -3,7 +3,7 @@
 Run the container
 
 ```
-docker run --net=host -p 8080:8080 -t kudoz/npm-proxy-cache
+docker run --restart=always --net=host -p 8080:8080 -t kudoz/npm-proxy-cache
 ```
 
 Use it with `npm`, replacing the npm-proxy-cache hostname below with the ip or hostname you have the container above running at.
